@@ -7,5 +7,5 @@
 #' @examples
 #' hello_world()
 hello_world <- function() {
-  print("Hello, world!")
+  print("Hello, world!!")
 }
