@@ -20,6 +20,17 @@ devtools::test()
 
 # GIT --------------------------------------------------------------------------
 
+# get user info
+git config user.name
+git config user.email
+
+git config --global user.name "Your Full Name"
+git config --global user.email "your_email@example.com"
+
+# set locally, need to be in relevant repo
+git config user.name "Your Preferred Name"
+git config user.email "your_email@example.com"
+
 # check git configuration, will be cache, store, or others
 git config --get credential.helper
 
