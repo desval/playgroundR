@@ -1,0 +1,32 @@
+
+
+# create package in an existing folder
+usethis::create_package(here::here())
+
+# create documentation
+roxygen2::roxygenise()
+
+# to set up the testing infrastructure.
+usethis::use_testthat()
+
+# to create a test file.
+usethis::use_test("function_name")
+usethis::use_test() # on current open file
+
+# run all package tests
+devtools::test()
+
+
+
+# GIT --------------------------------------------------------------------------
+
+# check git configuration, will be cache, store, or others
+git config --get credential.helper
+
+# set to store, will save them the first time they are used
+git config credential.helper store
+
+# check stored credentials
+cat ~/.git-credentials
+
+
