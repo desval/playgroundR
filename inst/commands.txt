@@ -17,3 +17,16 @@ usethis::use_test() # on current open file
 devtools::test()
 
 
+
+# GIT --------------------------------------------------------------------------
+
+# check git configuration, will be cache, store, or others
+git config --get credential.helper
+
+# set to store, will save them the first time they are used
+git config credential.helper store
+
+# check stored credentials
+cat ~/.git-credentials
+
+
