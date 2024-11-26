@@ -29,4 +29,10 @@ git config credential.helper store
 # check stored credentials
 cat ~/.git-credentials
 
+# GIT ACTIONS ------------------------------------------------------------------
+
+# create a folder for the workflow file
+mkdir -p .github/workflows # -p creates parents
+
+
 
