@@ -28,6 +28,6 @@ jobs:
         Rscript -e 'install.packages("devtools")'
         # Rscript -e 'devtools::install_deps(dependencies = TRUE)'
 
-    # - name: Run Tests
-    #   run: |
-    #     Rscript -e 'devtools::test()'
+    - name: Run Tests
+      run: |
+        Rscript -e 'devtools::test()'
