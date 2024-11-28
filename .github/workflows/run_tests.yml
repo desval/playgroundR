@@ -17,6 +17,26 @@ jobs:
     - name: Start Action
       run: echo "Start Action"
 
+    - name: Install System Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+        libcurl4-openssl-dev \
+        libxml2-dev \
+        zlib1g-dev \
+        libssl-dev \
+        libjpeg-dev \
+        libpng-dev \
+        libtiff5-dev \
+        libpcre2-dev \
+        libbz2-dev \
+        xz-utils \
+        libharfbuzz-dev \
+        libfribidi-dev \
+        libfreetype6-dev \
+        libhdf5-dev
+
+
     - name: Checkout Code
       uses: actions/checkout@v3
 
